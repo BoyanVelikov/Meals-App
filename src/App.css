@@ -164,3 +164,24 @@ ul {
 /* End Of Global Styles */
 /* End Of Global Styles */
 /* End Of Global Styles */
+
+/*Search*/
+/*Favorites*/
+/*Meals*/
+.section,.section-center{
+  padding:3rem 0;
+  width:var(--view-width);
+  max-width:var(--max-width);
+  margin:0 auto;
+}
+
+.section-center{
+  display:grid;
+  gap:2rem;
+}
+@media screen and (min-width:776px){
+  .section-center{
+    grid-template-columns:1fr 1fr;
+  }
+}
+/*Modal*/
