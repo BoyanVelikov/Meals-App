@@ -1,4 +1,5 @@
-import { useGlobalContext } from '../context'
+import { useGlobalContext } from '../context';
+import {BsHandThumbsUp} from 'react-icons/bs';
 
 const Meals = () => {
   const { meals } = useGlobalContext();
@@ -7,10 +8,10 @@ const Meals = () => {
     {meals.map((singleMeal) => {
       const {idMeal, strMeal:title, strMealThumb:image} = singleMeal
       return <article key={idMeal} className='single-meal'>
-      <img src={image} className='img' style={{width:'200px'}}/>
+      <img src={image} className='img'/>
         <footer>
           <h5>{title}</h5>
-          <button className='like-btn'>click me</button>
+          <button className='like-btn'><BsHandThumbsUp/></button>
         </footer>
       </article>
         
